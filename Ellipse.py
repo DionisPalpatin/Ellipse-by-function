@@ -1,5 +1,5 @@
 import pygame as pg
-from math import sqrt, ceil
+from math import sqrt
 
 
 try:
