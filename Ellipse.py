@@ -20,8 +20,10 @@ try:
                 
         pg.draw.circle(window, (255, 255, 255), (size // 2, size // 2), step, 1)
         for i in range(1, n + 1):
-            pg.draw.ellipse(window, (255, 255, 255), (size // 2 - step * i, 0, 2 * step * i, size), 1)
-            pg.draw.ellipse(window, (255, 255, 255), (0, size // 2 - step * i, size, 2 * step * i), 1)
+            width_or_height = 2 * step * i
+            position_of_corner = size // 2 - step * i
+            pg.draw.ellipse(window, (255, 255, 255), (position_of_corner, 0, width_or_height, size), 1)
+            pg.draw.ellipse(window, (255, 255, 255), (0, position_of_corner, size, width_or_height), 1)
             
             
         pg.display.update()
