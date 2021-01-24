@@ -1,9 +1,10 @@
 import pygame as pg
 from math import sqrt, ceil
 
-size = 800
+
 try:
     n = int(input())
+    size = 800
     step = size // n // 2
 
     pg.init()
